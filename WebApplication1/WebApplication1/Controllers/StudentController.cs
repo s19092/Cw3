@@ -95,9 +95,9 @@ namespace WebApplication1.Controllers
 
                     var en = new Enrollment();
                     en.IdEnrollment = Int32.Parse(dataReader["idenrollment"].ToString());
-                    en.StartDate = dataReader["Semester"].ToString();
+                    en.Semester =  Int32.Parse(dataReader["Semester"].ToString());
                     en.IdStudy = Int32.Parse(dataReader["IdStudy"].ToString());
-                    en.StartDate = dataReader["startDate"].ToString();
+                    en.StartDate = (DateTime)dataReader["Birthdate"];
                     
                     list.Add(en);
                 }

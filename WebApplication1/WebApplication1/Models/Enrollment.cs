@@ -12,7 +12,7 @@ namespace WebApplication1.Models
         public int Semester { get; set; }
         public int IdStudy { get; set; }
 
-        public string StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
     }
 }
